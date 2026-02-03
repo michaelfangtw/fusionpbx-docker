@@ -106,6 +106,12 @@ RUN . ./resources/config.sh && \
     . ./resources/environment.sh && \
     ./resources/finish.sh
 
+    # Re-run postgresql.sh and finish.sh to ensure proper setup    
+# fix db configuration issues
+WORKDIR /usr/src/fusionpbx-install.sh/ubuntu/resources
+RUN ./postgresql.sh  && \    
+    ./finish.sh
+
 RUN rm -rf /var/lib/apt/lists/*
 
 ENTRYPOINT ["/usr/sbin/init"]
