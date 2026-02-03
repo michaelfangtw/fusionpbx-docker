@@ -2,7 +2,7 @@
 # FusionPBX Settings
 domain_name=ip_address                      # hostname, ip_address or a custom value
 system_username=admin                       # default username admin
-system_password=${SYSTEM_PASSWORD:-your_password}	# SYSTEM_PASSWORD in .env  or your_password
+system_password=your_password               # dont forget to change password
 system_branch=5.4                           # master, 5.4
 
 # FreeSWITCH Settings
@@ -19,7 +19,7 @@ sofia_version=1.13.17                       # release version for sofia-sip to u
 # Database Settings
 database_name=fusionpbx                     # Database name (safe characters A-Z, a-z, 0-9)
 database_username=fusionpbx                 # Database username (safe characters A-Z, a-z, 0-9)
-database_password=${DATABASE_PASSWORD:-your_password}	# DATABASE_PASSWORD in .env  or your_password
+database_password=your_password             # dont forget to change password
 #system =apt install  postgres 
 database_repo=system                        # PostgreSQL official, system
 database_version=18                         # requires repo official

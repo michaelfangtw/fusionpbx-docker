@@ -70,6 +70,7 @@ docker pull michaelfangtw/fusionpbx-docker:5.4
 #### Option B: Build Locally
 
 If you want to build the image locally:
+you can change password in config.sh
 
 ```bash
 docker build -t fusionpbx-docker:5.4 .
@@ -122,7 +123,7 @@ Once the container is running, access FusionPBX at:
 
 - **URL**: [http://localhost](http://localhost)
 - **Username**: `admin@localhost`
-- **Password**: `your_password` *(set in .env or config.sh)*
+- **Password**: `your_password` *don't forget to change password*
 
 ## 📁 Project Structure
 
@@ -167,7 +168,7 @@ Configuration data is persisted through Docker volumes:
 
 - **URL**: [http://localhost](http://localhost)
 - **Username**: `admin@localhost`
-- **Password**: `your_password` *(set in .env or config.sh)*
+- **Password**: `your_password` *don't forget to change password*
 
 ### 🗄️ Database (PostgreSQL)
 
@@ -175,7 +176,7 @@ Configuration data is persisted through Docker volumes:
 
 - **Host**: `localhost`
 - **User**: `fusionpbx`
-- **Password**: `your_password` *(set in .env or config.sh)*
+- **Password**: `your_password` *don't forget to change password*
 
 ## 🔧 Troubleshooting
 
@@ -216,7 +217,7 @@ If you cannot log in to the web interface:
 
 3. **Reset admin credentials:**
    - **Username**: `admin`
-   - **Password**: `your_password` *(set in .env or config.sh)*
+   - **Password**: `your_password` *don't forget to change password*
    - **Domain**: `localhost`
 
 ### 🗄️ Database Issues

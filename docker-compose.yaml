@@ -8,6 +8,7 @@ services:
     #  dockerfile: Dockerfile
     
     #using docker hub image
+    #fusionpbx 5.2 is old theme(5.4 is new theme)
     image: michaelfangtw/fusionpbx-docker:5.4
 
     # Use host networking to allow the container to access all host ports.
@@ -20,10 +21,6 @@ services:
     # Restart the container automatically if it fails or if the host reboots
     restart: always
     privileged: true
-
-    # Load environment variables from a .env file at the compose root    
-    env_file:
-      - .env
 
     # Persist fusionpbx webapp, configs and FreeSWITCH autoload configs on the host
     volumes:
