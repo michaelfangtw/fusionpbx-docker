@@ -167,7 +167,7 @@ Configuration data is persisted through Docker volumes:
 
 - **URL**: [http://localhost](http://localhost)
 - **Username**: `admin@localhost`
-- **Password**: `YOUR_PASSWORD` *(set in .env or config.sh)*
+- **Password**: `password` *(set in .env or config.sh)*
 
 ### 🗄️ Database (PostgreSQL)
 
@@ -175,7 +175,7 @@ Configuration data is persisted through Docker volumes:
 
 - **Host**: `localhost`
 - **User**: `fusionpbx`
-- **Password**: `YOUR_PASSWORD` *(set in .env or config.sh)*
+- **Password**: `password` *(set in .env or config.sh)*
 
 ## 🔧 Troubleshooting
 
@@ -216,7 +216,7 @@ If you cannot log in to the web interface:
 
 3. **Reset admin credentials:**
    - **Username**: `admin`
-   - **Password**: `YOUR_PASSWORD` *(set in .env or config.sh)*
+   - **Password**: `password` *(set in .env or config.sh)*
    - **Domain**: `localhost`
 
 ### 🗄️ Database Issues
