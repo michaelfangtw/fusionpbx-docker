@@ -21,9 +21,9 @@ services:
     restart: always
     privileged: true
 
-    # Load environment variables from a .env file at the compose root
-    #env_file:
-    #  - .env
+    # Load environment variables from a .env file at the compose root    
+    env_file:
+      - .env
 
     # Persist fusionpbx webapp, configs and FreeSWITCH autoload configs on the host
     volumes:
