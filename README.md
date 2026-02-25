@@ -31,7 +31,7 @@ A comprehensive Docker solution for FusionPBX, providing a complete VoIP platfor
 | Component | Version |
 |-----------|---------|
 | **Base OS** | Ubuntu 24.04 |
-| **FusionPBX** | 5.4.7 |
+| **FusionPBX** | 5.4.7 | NEW UI
 | **FreeSWITCH** | 1.10.12 |
 | **PHP** | 8.3 |
 | **PostgreSQL** | 16 |
